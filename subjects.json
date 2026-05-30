@@ -1,0 +1,32 @@
+{
+  "subjects": [
+    {
+      "name": "Mathematics",
+      "slug": "mathematics",
+      "quizzes": [
+        {
+          "file": "algebra.csv",
+          "name": "Algebra"
+        },
+        {
+          "file": "calculus.csv",
+          "name": "Calculus"
+        }
+      ]
+    },
+    {
+      "name": "Science",
+      "slug": "science",
+      "quizzes": [
+        {
+          "file": "chemistry.csv",
+          "name": "Chemistry"
+        },
+        {
+          "file": "physics.csv",
+          "name": "Physics"
+        }
+      ]
+    }
+  ]
+}

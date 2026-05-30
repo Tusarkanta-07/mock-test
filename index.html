@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MockTest — Premium Online Quiz Platform</title>
+  <meta name="description" content="Take interactive quizzes on Mathematics, Science, and more. A premium, self-updating mock-test platform." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <!-- Toast container for error messages -->
+  <div id="toast-container"></div>
+
+  <!-- ====== APP SHELL ====== -->
+  <div id="app">
+
+    <!-- Header -->
+    <header id="app-header">
+      <div class="header-inner">
+        <div class="logo" id="logo-home">
+          <span class="logo-icon">◆</span>
+          <h1>Mock<span class="accent">Test</span></h1>
+        </div>
+        <p class="tagline">Premium Quiz Platform</p>
+      </div>
+    </header>
+
+    <!-- Main content area — views are swapped here -->
+    <main id="main-content">
+
+      <!-- SUBJECTS VIEW -->
+      <section id="view-subjects" class="view active">
+        <div class="view-header">
+          <h2>Choose a Subject</h2>
+          <p class="subtitle">Select a subject to explore its quizzes</p>
+        </div>
+        <div id="subjects-grid" class="card-grid"></div>
+        <!-- Error / empty state -->
+        <div id="subjects-error" class="error-state hidden">
+          <p class="error-icon">⚠️</p>
+          <p class="error-msg">Failed to load subjects. Check your connection.</p>
+          <button id="btn-retry" class="btn btn-primary">Retry</button>
+        </div>
+      </section>
+
+      <!-- QUIZZES VIEW -->
+      <section id="view-quizzes" class="view hidden">
+        <div class="view-header">
+          <button id="btn-back-subjects" class="btn-back" aria-label="Back to subjects">
+            <span class="arrow">←</span>
+          </button>
+          <div>
+            <h2 id="quizzes-title">Subject Name</h2>
+            <p class="subtitle">Pick a quiz to start</p>
+          </div>
+        </div>
+        <div id="quizzes-grid" class="card-grid"></div>
+      </section>
+
+      <!-- QUIZ / TEST VIEW -->
+      <section id="view-quiz" class="view hidden">
+        <div class="quiz-container">
+          <button id="btn-back-quizzes" class="btn-back" aria-label="Back to quizzes">
+            <span class="arrow">←</span>
+          </button>
+          <div class="quiz-card glass-card">
+            <div class="progress-bar-track">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+            <p id="quiz-progress" class="quiz-progress">Question 1/10</p>
+            <h3 id="quiz-question" class="quiz-question">Question text here</h3>
+            <div id="quiz-options" class="quiz-options">
+              <!-- Options rendered by JS -->
+            </div>
+            <div class="quiz-nav">
+              <button id="btn-next" class="btn btn-primary hidden" disabled>Next</button>
+              <button id="btn-submit" class="btn btn-accent hidden" disabled>Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS VIEW -->
+      <section id="view-results" class="view hidden">
+        <div class="results-container">
+          <div class="results-header glass-card">
+            <h2>Quiz Complete!</h2>
+            <div id="results-score" class="results-score">
+              <span class="score-number">8</span>
+              <span class="score-divider">/</span>
+              <span class="score-total">10</span>
+            </div>
+            <p id="results-percentage" class="results-percentage">80%</p>
+            <div class="results-actions">
+              <button id="btn-retake" class="btn btn-primary">Retake Quiz</button>
+              <button id="btn-back-home" class="btn btn-outline">Back to Subjects</button>
+            </div>
+          </div>
+          <div id="results-details" class="results-details">
+            <!-- Question review cards rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="app-footer">
+      <p>MockTest &copy; 2025</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

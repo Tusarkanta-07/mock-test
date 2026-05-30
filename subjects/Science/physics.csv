@@ -1,0 +1,11 @@
+question,option_a,option_b,option_c,option_d,correct_answer,explanation
+"What is the SI unit of force?","Joule","Watt","Newton","Pascal",C,"Force is measured in Newtons (N)"
+"What is Newton's second law?","F = ma","E = mc²","F = mv","P = mv",A,"Force equals mass times acceleration"
+"What is the speed of light in vacuum?","3 × 10⁶ m/s","3 × 10⁸ m/s","3 × 10¹⁰ m/s","3 × 10⁴ m/s",B,"The speed of light c ≈ 3 × 10⁸ m/s"
+"Which quantity is a vector?","Speed","Mass","Temperature","Velocity",D,"Velocity has both magnitude and direction"
+"What is the unit of electrical resistance?","Ampere","Volt","Ohm","Watt",C,"Resistance is measured in Ohms (Ω)"
+"What is the acceleration due to gravity on Earth?","8.9 m/s²","9.8 m/s²","10.8 m/s²","11.2 m/s²",B,"g ≈ 9.8 m/s² on Earth's surface"
+"Which law states every action has an equal and opposite reaction?","First law","Second law","Third law","Law of gravitation",C,"Newton's Third Law of Motion"
+"What type of energy does a moving object have?","Potential","Kinetic","Thermal","Nuclear",B,"Kinetic energy = ½mv²"
+"What is the SI unit of power?","Joule","Newton","Watt","Pascal",C,"Power is measured in Watts (W)"
+"What phenomenon explains why a straw looks bent in water?","Reflection","Diffraction","Refraction","Dispersion",C,"Refraction causes light to bend at medium boundaries"
