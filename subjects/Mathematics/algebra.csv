@@ -1,0 +1,11 @@
+question,option_a,option_b,option_c,option_d,correct_answer,explanation
+"What is 2 + 2?","3","4","5","6",B,"Basic addition: 2 + 2 = 4"
+"Solve x + 5 = 10. x = ?","3","4","5","6",C,"Subtract 5 from both sides: x = 10 - 5 = 5"
+"What is 3 × 7?","18","21","24","27",B,"Multiplication: 3 × 7 = 21"
+"Simplify: 2(x + 3)","2x + 3","2x + 6","x + 6","2x + 5",B,"Distribute the 2: 2·x + 2·3 = 2x + 6"
+"What is the value of x in 2x = 14?","5","6","7","8",C,"Divide both sides by 2: x = 14 ÷ 2 = 7"
+"Which is a factor of x² - 9?","(x + 3)","(x + 9)","(x - 1)","(x + 1)",A,"Difference of squares: x² - 9 = (x + 3)(x - 3)"
+"What is 5²?","10","20","25","30",C,"5 squared = 5 × 5 = 25"
+"Solve: 3x - 6 = 0","1","2","3","6",B,"Add 6: 3x = 6, then divide: x = 2"
+"What is the slope of y = 3x + 5?","5","3","8","1",B,"In y = mx + b form, the slope m = 3"
+"Evaluate: (-2)³","-8","-6","6","8",A,"(-2)³ = (-2)×(-2)×(-2) = -8"
