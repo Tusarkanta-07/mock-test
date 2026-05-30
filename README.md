@@ -98,10 +98,9 @@ Want to test the site on your machine?
    node generate-manifest.js
    ```
 3. **Start a local server**
-   You can use any static server. For example:
-   ```bash
-   npx serve .
-   ```
+   Because the site fetches CSV files, it needs to be run on a local server (you can't just double-click the HTML file). You can do this easily:
+   - **Using VS Code:** Install the "Live Server" extension, right-click `index.html`, and select "Open with Live Server".
+   - **Using Python:** Open your terminal in the project folder and run `python -m http.server 3000`.
    *Then open `http://localhost:3000` in your browser.*
 
 ---
